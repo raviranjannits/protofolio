@@ -1,0 +1,90 @@
+/* Light Mode Variables */
+:root {
+  --orange: #094298;
+  --blue-hover: rgb(0, 0, 101);
+  --black: #000;
+
+
+  --theme-color: #fff;
+  --opposite-theme-color: #000;
+
+  --skill-main-bg:rgb(0, 0, 101);
+  --skill-bg:rgb(4, 4, 82);
+  --skill-bg-card:#fff;
+  --project-card-border:#000;
+  --light-blue-contact: #e6f7ff;
+  --contact-boxshadow:#fff;
+
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --footer-text-hover: #ececec;
+  --default-bg: rgb(239, 244, 246);
+
+  --footer-bg:  linear-gradient(to left, var(--orange), rgb(0, 0, 128));
+
+  --button:  linear-gradient(to left, var(--orange), rgb(0, 0, 128));
+  --button-hover:linear-gradient(to left, var(--orange), rgb(0, 0, 101));
+}
+
+/* Dark Mode Variables */
+:root .dark-mode {
+  --orange: #5230c9;
+  --blue-hover: rgb(0, 0, 101);
+  --black: #fff;
+
+  --skill-main-bg:#000000;
+  --skill-bg:#0c0618;
+  --skill-bg-card:#0c0618;
+  --project-card-border:#5230c9;
+  --light-blue-contact: #000000;
+
+  
+  --theme-color: #000000;
+  --opposite-theme-color: #fff;
+  --contact-boxshadow:#5038a5;
+  --boxShadow: 0px 19px 60px rgb(255 255 255 / 8%);
+
+
+  --default-bg: #000000;
+
+  --footer-bg: #000;
+
+  --button:linear-gradient(to left,#5230c9, rgb(41, 3, 116));
+  --button-hover: linear-gradient(to left,#4122b4,rgb(43, 10, 110));
+}
+
+/* Light Mode Styles */
+.App {
+  overflow: hidden;
+  color: var(--black);
+  padding-left: 3.5rem;
+  background-color: var(--default-bg);
+}
+
+.button {
+  border-radius: 2rem;
+  font-size: 16px;
+  border: none;
+  background: var(--button);
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 550;
+  font-family: Poppins;
+  transition: all 0.3s ease-in-out;
+}
+.button:hover {
+  transition: all 0.3s ease-in-out;
+  background: var(--button-hover);
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  border: 1px solid var(--black);
+}
+
+.toast-container{
+  white-space: nowrap;
+}

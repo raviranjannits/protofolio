@@ -1,0 +1,123 @@
+.education {
+    display: flex;
+    padding-top: 4rem;
+    flex-direction: column;
+    background-color: var(--default-bg);
+    align-items: center;
+    padding-bottom: 3.5rem;
+}
+ 
+.about-me {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Italiana", serif;
+}
+
+.me {
+    color: var(--orange);
+}
+
+.education-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.education-container p {
+    font-size: 1.2rem;
+}
+
+.education-container .inverted {
+    font-size: 2rem;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+}
+
+.education-container .nits {
+    display: flex;
+    width: 60rem;
+    background-color: var(--skill-bg-card);
+    gap: 2rem;
+    box-shadow: 0 20px 20px rgb(0, 0, 0, 0.1);
+}
+
+.education-container .nits .clg {
+    width: 7rem;
+    padding: 0.8rem;
+    aspect-ratio: 1;
+}
+
+.education-container .nits .clg img {
+    object-fit: cover;
+    background-color: #fff;
+    width: 100%;
+}
+
+.education-container .nits .clginfo a {
+    font-size: 1.1rem;
+    color: var(--orange);
+    text-decoration: none;
+}
+
+.education-container .nits .clginfo h3 {
+    font-size: 1.6rem;
+    line-height: 0.2rem;
+}
+
+.education-container .nits .clginfo p {
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:800px) {
+    .education {
+        padding-top: 2rem;
+        padding-bottom: 0;
+    }
+
+    .about-me {
+        font-size: 2rem;
+    }
+
+    .education-container {
+        gap: 2rem;
+    }
+
+    .education-container p {
+        font-size: 1rem;
+        padding: 2rem;
+        padding-bottom: 0;
+    }
+
+    .education-container .inverted {
+        display: none;
+    }
+
+    .education-container .nits {
+        flex-direction: column;
+        width: 80%;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .education-container .nits .clg {
+        width: 60%;
+        margin: auto;
+        padding: 0;
+    }
+
+    .education-container .nits .clginfo a {
+        font-size: 1rem;
+    }
+
+    .education-container .nits .clginfo h3 {
+        font-size: 1.2rem;
+        line-height: 1rem;
+    }
+
+    .education-container .nits .clginfo p {
+        font-size: 1.2rem;
+        padding: 0;
+    }
+}

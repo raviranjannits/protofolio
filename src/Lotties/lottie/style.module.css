@@ -1,0 +1,19 @@
+#headLottie{
+    width: 435px;
+    position: absolute;
+    top: -6%;
+    left: 65%;
+}
+
+@media screen and (max-width: 1160px) {
+    #headLottie{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 800px) {
+    #headLottie{
+        width: 260px;
+        left: calc(50% - 130px);
+        top: calc(50% - 130px);
+    }
+}

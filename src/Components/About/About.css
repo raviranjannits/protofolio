@@ -1,0 +1,161 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    padding-bottom: 4rem;
+    min-height: calc(100vh - 3.5rem);
+}
+
+.about-me {
+    margin-top: 4rem;
+}
+
+.me {
+    color: var(--orange);
+}
+
+.about-line {
+    height: 2px;
+    width: 80%;
+    background-color: var(--orange);
+    margin-bottom: 2rem;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.resume-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.aright {
+    margin-top: 2rem;
+    perspective: 1000px;
+    display: flex;
+}
+
+.image-container {
+    width: 20rem;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.image-container img {
+    width: 100%;
+    border: 3px solid var(--orange);
+}
+
+#bending-image {
+    object-fit: cover;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.bending {
+    transform: rotateY(var(--rotate-y)) rotateX(var(--rotate-x));
+}
+
+.resume a {
+    text-decoration: none;
+}
+
+.resume .button {
+    border-radius: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to right, var(--orange), rgb(0, 0, 101));
+    text-transform: uppercase;
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+}
+
+.resume .icon {
+    display: flex;
+}
+
+.aleft {
+    width: 60%;
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.aleft .about-info {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.aleft .about-info div {
+    font-size: 1.1rem;
+}
+
+.aleft .about-info span {
+    color: var(--orange);
+}
+
+.aleft .about-info a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.aleft h3,
+h4 {
+    line-height: 1rem;
+}
+
+@media only screen and (max-width:800px) {
+    .about {
+        min-height: 0;
+        padding-bottom: 2rem;
+    }
+
+    .about-me {
+        margin-top: 2rem;
+    }
+
+    .about-container {
+        gap: 2rem;
+        padding-top: 0;
+        flex-direction: column;
+    }
+
+    .resume-box {
+        gap: 2rem;
+    }
+
+    .aright {
+        margin-top: 2rem;
+        perspective: 1000px;
+    }
+
+    .aleft {
+        width: 90%;
+        font-size: 1rem;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .aleft .about-info {
+        display: none;
+    }
+
+    .aleft h3,
+    h4 {
+        line-height: 1rem;
+    }
+
+    .mbl_hide {
+        display: none;
+    }
+}

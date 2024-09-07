@@ -1,0 +1,142 @@
+.navbar {
+    height: 3.5rem;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    user-select: none;
+    padding-left: 5em;
+    align-items: center;
+    background-color: var(--theme-color);
+}
+
+.navbar .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .left a{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 550;
+    font-family: "Poppins", sans-serif;
+    color: var(--orange);
+}
+.navbar .left .icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.navbar .left .icon-container .dark-icon{
+   font-size: 2rem;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 6rem;
+}
+
+.right ul {
+    display: flex;
+    gap: 0.5rem;
+    list-style-type: none;
+}
+
+.right ul li {
+    margin-right: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.right ul li.active {
+    color: var(--orange);
+}
+
+
+.hamburger-menu {
+    display: none;
+}
+
+.hamburger-menu-2 {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .navbar {
+        background: transparent;
+    }
+
+    .hamburger-menu,
+    .hamburger-menu-2 {
+        cursor: pointer;
+        display: flex;
+        width: 2.5em;
+        height: 2.5em;
+        font-size: 1.5rem;
+        z-index: 10;
+        position: absolute;
+        margin-top: 1rem;
+        top: 0;
+    }
+    .hamburger-menu-2{
+        right: 20%;
+    }
+
+
+    .navbar .left a { 
+     display: none;
+    }
+    .navbar .left .icon-container{
+        position: absolute;
+        left: 1rem;
+    }
+
+    .right ul {
+        display: none;
+    }
+
+    .mobile-navbar {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 20%;
+        color: var(--opposite-theme-color);
+        width: 100%;
+        background-color: var(--theme-color);
+        z-index: -1;
+        transition: 0.5s;
+        height: 100%;
+    }
+
+    .mobile-navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        padding-top: 10rem;
+        margin: 0;
+    }
+
+    .mobile-navbar ul li {
+        font-size: 2rem;
+    }
+
+    .mobile-navbar ul li:hover {
+        cursor: pointer;
+        color: var(--orange);
+    }
+}

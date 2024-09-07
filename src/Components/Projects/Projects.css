@@ -1,0 +1,88 @@
+.projects {
+    display: flex;
+    padding-top: 4rem;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 3.5rem);
+}
+
+.project-title {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Italiana", serif;
+    margin: 1.5rem;
+}
+ 
+.project-content {
+    width: 82%;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    padding: 2rem;
+}
+
+.project-content .backend-icons {
+    display: flex;
+    gap: 2rem;
+}
+
+.project-content .backend-projects {
+    display: flex;
+    overflow-y: hidden;
+    gap: 1.2rem;
+}
+
+
+.project-content .project-icons {
+    display: flex;
+    width: 21.5rem;
+    height: 20.5rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    scrollbar-width: thin;
+    scrollbar-color: black transparent;
+}
+
+.project-content .project-icons::-webkit-scrollbar {
+    width: 0.1rem;
+    background-color: transparent;
+}
+
+.project-content .project-icons::-webkit-scrollbar-thumb {
+    background-color: var(--opposite-theme-color);
+    border-left: none;
+    border-right: none;
+}
+
+@media screen and (max-width:600px) {
+    .projects {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        justify-content: center;
+    }
+
+    .project-title {
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+    }
+
+    .project-content {
+        padding: 1rem;
+        width: 90%;
+        gap: 1rem;
+    }
+
+    .project-content .backend-projects {
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+
+    .project-content .project-icons {
+        display: none;
+    }
+}

@@ -1,0 +1,13 @@
+#headLottie{
+    width: 60px;
+    position: absolute;
+    left: 50%;
+    top: 44%;
+    user-select: none;
+    cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+    #headLottie{
+   display: none;
+    }
+}
