@@ -19,7 +19,7 @@ const Education = ({darkmode}) => {
                     <div className="clginfo">
                         <h3>Bachelor of Technology | Computer Science</h3>
                         <a href='https://nits.ac.in' target='_blank' rel='noreferrer'>National Institute of Technology,Silchar</a >
-                        <p>2021-Present | CGPA-9.04</p>
+                        <p>2021-Present | CGPA-</p>
                     </div>
                 </div>
                 <div className="nits">
