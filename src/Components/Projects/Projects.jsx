@@ -64,7 +64,7 @@ const Projects = ({ darkmode }) => {
               img={cpvalor}
               desc={"It calculates the worth of your coding profile"}
              github={""}
-              link={"https://cpvalor.netlify.app"}
+              link={""}
             />
             <ProjectCard
               name={"Guidance Guru"}
@@ -73,7 +73,7 @@ const Projects = ({ darkmode }) => {
               desc={
                 "It is an advice provider that gives you the correct guidance for every problem "
               }
-              github={""}
+              github={"https://my-protfolio-xi-cyan.vercel.app"}
             />
           </div>
         </div>
