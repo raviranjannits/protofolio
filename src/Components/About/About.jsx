@@ -77,10 +77,7 @@ const About = ({ darkmode }) => {
             <span>
               I am a final year Computer Science and Engineering student at the
               National Institute of Technology, Silchar. My journey includes an
-              internship as a Software Engineering Intern at BWS, along with
-              involvement in global communities like the Google Developer
-              Students Club (GDSC) and societies such as the Computer Science
-              Society at NIT Silchar.
+              internship as a Software Engineering Intern at BWS.
               <br />
               <br />
               I'm a passionate developer who enjoys tackling challenging
