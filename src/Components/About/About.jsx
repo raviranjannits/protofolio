@@ -52,7 +52,7 @@ const About = ({ darkmode }) => {
           </div>
           <div className="resume">
             <a
-              href="https://drive.google.com/file/d/1L8pgeGuofxWVGWF3BAx3ZCa2mdzAwDo3/view?usp=sharing"
+              href=" "
               target="_blank"
               rel="noreferrer"
             >
